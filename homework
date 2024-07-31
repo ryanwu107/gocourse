@@ -1,0 +1,12 @@
+package test
+
+func DeleteG[T any](index int, slice []T)[]T{
+
+	s1:=slice[:index]
+
+	for i:=index+1;i<len(slice);i++{
+		s1=append(s1, slice[i])	
+	}
+
+	return s1
+}
